@@ -1,0 +1,7 @@
+- alias: hasura
+  config:
+    configmap: controller-conf
+    namespace: anticoagulant57-hasura
+  data: null
+  kubeContext: anticoagulant57
+  name: anticoagulant57
