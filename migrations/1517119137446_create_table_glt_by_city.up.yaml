@@ -1,0 +1,10 @@
+- args:
+    sql: CREATE TABLE "glt_by_city"("dt" date NOT NULL, "avg_tmp" numeric NOT NULL
+      DEFAULT 0.0, "avg_tmp_uncrtnty" numeric NOT NULL DEFAULT 0.0, "city" text NOT
+      NULL DEFAULT 'unknown', "country" text NOT NULL DEFAULT 'unknown', "latitude"
+      text NOT NULL DEFAULT 'unknown', "longitude" text NOT NULL DEFAULT 'unknown',
+      PRIMARY KEY ("dt","city","country") )
+  type: run_sql
+- args:
+    name: glt_by_city
+  type: add_existing_table_or_view

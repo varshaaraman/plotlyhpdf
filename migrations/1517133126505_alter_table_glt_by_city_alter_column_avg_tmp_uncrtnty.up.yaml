@@ -1,0 +1,10 @@
+- args:
+    sql: ALTER TABLE "glt_by_city" ALTER COLUMN "avg_tmp_uncrtnty" TYPE numeric;
+  type: run_sql
+- args:
+    sql: ALTER TABLE ONLY "glt_by_city" ALTER COLUMN "avg_tmp_uncrtnty" SET DEFAULT
+      0.0;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "glt_by_city" ALTER COLUMN "avg_tmp_uncrtnty" DROP NOT NULL;
+  type: run_sql
