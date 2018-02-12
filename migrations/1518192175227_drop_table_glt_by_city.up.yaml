@@ -1,0 +1,3 @@
+- args:
+    sql: DROP TABLE "glt_by_city"
+  type: run_sql
