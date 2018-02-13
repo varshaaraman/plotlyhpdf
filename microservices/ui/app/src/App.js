@@ -53,7 +53,8 @@ render() {
   }
   return (
     <div>
-      <h1>Weather</h1>
+      <h1>Weather App</h1>
+      <h2>Using Plotly's library</h2>
       <form onSubmit={this.fetchData}>
         <label>I want to know the weather for
           <input
