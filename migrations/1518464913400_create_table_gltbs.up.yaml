@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "gltbs"("id" integer NOT NULL, "dt" date NOT NULL, "avg_tmp"
+      numeric , "avg_tmp_uncrtnty" numeric , "state" text NOT NULL, "country" text
+      NOT NULL, PRIMARY KEY ("id") )
+  type: run_sql
+- args:
+    name: gltbs
+  type: add_existing_table_or_view

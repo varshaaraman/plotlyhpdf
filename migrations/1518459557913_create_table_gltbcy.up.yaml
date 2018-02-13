@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "gltbcy"("id" integer NOT NULL, "dt" date NOT NULL, "avg_tmp"
+      numeric NOT NULL DEFAULT 0.00, "avg_tmp_uncrtnty" numeric NOT NULL DEFAULT 0.00,
+      "cntry" text NOT NULL DEFAULT 'unknown', PRIMARY KEY ("id") )
+  type: run_sql
+- args:
+    name: gltbcy
+  type: add_existing_table_or_view

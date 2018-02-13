@@ -1,0 +1,9 @@
+- args:
+    sql: ALTER TABLE "gltbc" ALTER COLUMN "avg_tmp" TYPE numeric;
+  type: run_sql
+- args:
+    sql: ALTER TABLE ONLY "gltbc" ALTER COLUMN "avg_tmp" SET DEFAULT 0.00;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "gltbc" ALTER COLUMN "avg_tmp" DROP NOT NULL;
+  type: run_sql

@@ -1,0 +1,9 @@
+- args:
+    sql: CREATE TABLE "gt"("id" integer NOT NULL, "dt" date NOT NULL, "lnd_avg_tmp"
+      numeric , "lnd_avg_tmp_uncrtrnty" numeric , "lnd_max_tmp" numeric , "lnd_max_tmp_uncrtrnty"
+      numeric , "lnd_min_tmp" numeric , "lnd_min_tmp_uncrtrnty" numeric , "lnd_ocn_avg_tmp"
+      numeric , "lnd_ocn_avg_tmp_unctnty" numeric , PRIMARY KEY ("id") )
+  type: run_sql
+- args:
+    name: gt
+  type: add_existing_table_or_view

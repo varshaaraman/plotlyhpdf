@@ -1,0 +1,9 @@
+- args:
+    sql: CREATE TABLE "gltbmc"("id" integer NOT NULL, "dt" date NOT NULL, "avg_tmp"
+      numeric , "avg_tmp_uncrtrnty" numeric , "city" text NOT NULL, "country" text
+      NOT NULL, "latitude" text NOT NULL, "longitude" text NOT NULL, PRIMARY KEY ("id")
+      )
+  type: run_sql
+- args:
+    name: gltbmc
+  type: add_existing_table_or_view
