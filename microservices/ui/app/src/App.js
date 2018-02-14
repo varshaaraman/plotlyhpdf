@@ -54,7 +54,7 @@ render() {
   return (
     <div>
       <h1>Weather App</h1>
-      <h2>Using Plotly's library</h2>
+      <h2>Using Plotly library</h2>
       <form onSubmit={this.fetchData}>
         <label>I want to know the weather for
           <input
@@ -63,6 +63,10 @@ render() {
             value={this.state.location}
             onChange={this.changeLocation}
           />
+        </label>
+        <label> from
+        <input type="date" id="start_date" name="start_date" min="1742-11-01" /> to
+        <input type="date" id="end_date" name="end_date" min="1742-11-01" />
         </label>
       </form>
       {/*
