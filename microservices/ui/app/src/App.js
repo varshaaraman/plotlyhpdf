@@ -55,19 +55,25 @@ render() {
     <div>
       <h1>Weather App</h1>
       <h2>Using Plotly library</h2>
-      <form onSubmit={this.fetchData}>
-        <label>I want to know the weather for
+      <form
+      method="post"
+      onSubmit={this.fetchData}>
+        <label htmlFor="location">I want to know the weather for
           <input
+            id="location"
+            name="location"
             placeholder={"City, Country"}
             type="text"
             value={this.state.location}
             onChange={this.changeLocation}
           />
         </label>
-        <label> from
+        <label
+        htmlFor="start_date"> from
         <input type="date" id="start_date" name="start_date" min="1742-11-01" />
         </label>
-        <label>
+        <label
+        htmlFor="end_date">
         to
         <input type="date" id="end_date" name="end_date" min="1742-11-01" />
         </label>
