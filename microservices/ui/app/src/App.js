@@ -65,7 +65,10 @@ render() {
           />
         </label>
         <label> from
-        <input type="date" id="start_date" name="start_date" min="1742-11-01" /> to
+        <input type="date" id="start_date" name="start_date" min="1742-11-01" />
+        </label>
+        <label>
+        to
         <input type="date" id="end_date" name="end_date" min="1742-11-01" />
         </label>
       </form>
